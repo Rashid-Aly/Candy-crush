@@ -48,7 +48,7 @@ function App() {
   }, [board, dispatch, boardSize]);
 
   return (
-    <div className="flex items-center bg-slate-300 w-full mx-auto justify-center h-screen ">
+    <div className="flex items-center w-full mx-auto justify-center h-screen ">
       <Board />
     </div>
   );
