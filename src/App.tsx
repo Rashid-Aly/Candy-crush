@@ -18,6 +18,8 @@ import {
 function App() {
   const dispatch = useAppDispatch();
   const board = useAppSelector(({ candyCrush: { board } }) => board);
+
+  console.log(board,"board")
   const boardSize = useAppSelector(
     ({ candyCrush: { boardSize } }) => boardSize
   );
