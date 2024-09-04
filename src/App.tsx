@@ -19,7 +19,6 @@ function App() {
   const dispatch = useAppDispatch();
   const board = useAppSelector(({ candyCrush: { board } }) => board);
 
-
   const boardSize = useAppSelector(
     ({ candyCrush: { boardSize } }) => boardSize
   );
@@ -27,7 +26,7 @@ function App() {
   useEffect(() => {
     dispatch(updateBoard(createBoard(boardSize)));
   }, [dispatch, boardSize]);
-console.log(dispatch, "dispatch")
+  console.log(dispatch, "dispatch");
   useEffect(() => {
     const timeout = setTimeout(() => {
       const newBoard = [...board];
@@ -50,8 +49,16 @@ console.log(dispatch, "dispatch")
   }, [board, dispatch, boardSize]);
 
   return (
-    <div className="flex items-center w-full mx-auto justify-center h-screen bg-blue-300 ">
-      <Board />
+    <div className="flex items-center w-full mx-auto gap-4 justify-center h-screen bg-blue-300 ">
+      <div className="bg-purple-400 w-96 h-[82vh]">
+        <h1>heloo</h1>
+      </div>
+      <div>
+        <Board />
+      </div>
+      <div className="bg-purple-400  w-96 h-[82vh]">
+        <h1>heloo</h1>
+      </div>
     </div>
   );
 }
