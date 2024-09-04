@@ -50,7 +50,7 @@ console.log(dispatch, "dispatch")
   }, [board, dispatch, boardSize]);
 
   return (
-    <div className="flex items-center w-full mx-auto justify-center h-screen ">
+    <div className="flex items-center w-full mx-auto justify-center h-screen bg-blue-300 ">
       <Board />
     </div>
   );
