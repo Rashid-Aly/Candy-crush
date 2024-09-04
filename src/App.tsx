@@ -3,6 +3,7 @@ import Board from "./components/Board";
 import { moveBelow, updateBoard } from "./store";
 import { useAppDispatch, useAppSelector } from "./store/hooks";
 import { createBoard } from "./utils/createBoard";
+
 import {
   formulaForColumnOfFour,
   formulaForColumnOfThree,
@@ -51,13 +52,15 @@ function App() {
   return (
     <div className="flex items-center w-full mx-auto gap-4 justify-center h-screen bg-blue-300 ">
       <div className="bg-purple-400 w-96 h-[82vh]">
-        <h1>heloo</h1>
+       <img src="https://www.wikihow.com/images/thumb/7/7c/Play-Candy-Crush-Saga-Step-4-Version-2.jpg/v4-460px-Play-Candy-Crush-Saga-Step-4-Version-2.jpg" alt=""  className="w-96 h-full"/>
       </div>
       <div>
         <Board />
       </div>
       <div className="bg-purple-400  w-96 h-[82vh]">
-        <h1>heloo</h1>
+      <img src="https://www.wikihow.com/images/thumb/7/7c/Play-Candy-Crush-Saga-Step-4-Version-2.jpg/v4-460px-Play-Candy-Crush-Saga-Step-4-Version-2.jpg" alt=""  className="w-96 h-full"/>
+      </div>
+      <div>
       </div>
     </div>
   );
