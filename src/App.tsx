@@ -50,15 +50,31 @@ function App() {
   }, [board, dispatch, boardSize]);
 
   return (
+    <>
+     <div  className="flex bg-blue-300 justify-center text-xl py-4 font-semibold">
+      <h1>Clone Candy Crush Game</h1>
+    </div>
+    
     <div className="flex flex-col  lg:flex-row items-center w-full mx-auto gap-4 justify-center h-screen bg-blue-300 ">
-      <div className="bg-purple-400 hidden lg:block w-96 h-[82vh]">
+   
+      <div className=" lg:flex gap-4 flex-col hidden  w-96 h-[82vh]">
+      <div className="bg-purple-400 w-96 h-[40vh]">
         <img
           src="https://www.wikihow.com/images/thumb/7/7c/Play-Candy-Crush-Saga-Step-4-Version-2.jpg/v4-460px-Play-Candy-Crush-Saga-Step-4-Version-2.jpg"
           alt=""
           className="w-96 h-full"
         />
       </div>
+      <div className="bg-purple-400 w-96 h-[40vh]">
+      <img
+            src="https://www.pandasecurity.com/en/mediacenter/src/uploads/2014/03/candycrush-1024x736.jpg"
+            alt=""
+            className="w-96 h-full"
+          />
+        </div>
+        </div>
       <div>
+
         <Board />
       </div>
       <div className=" lg:flex gap-4 flex-col hidden  w-96 h-[82vh]">
@@ -70,15 +86,17 @@ function App() {
           />
         </div>
         <div className="bg-purple-400 w-96 h-[40vh]">
-          <img
-            src="https://www.pandasecurity.com/en/mediacenter/src/uploads/2014/03/candycrush-1024x736.jpg"
-            alt=""
-            className="w-96 h-full"
-          />
+       
+            <img
+          src="https://www.wikihow.com/images/thumb/7/7c/Play-Candy-Crush-Saga-Step-4-Version-2.jpg/v4-460px-Play-Candy-Crush-Saga-Step-4-Version-2.jpg"
+          alt=""
+          className="w-96 h-full"
+        />
         </div>
       </div>
       <div></div>
     </div>
+    </>
   );
 }
 
