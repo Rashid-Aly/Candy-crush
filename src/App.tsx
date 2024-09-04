@@ -51,12 +51,7 @@ function App() {
 
   return (
     <>
-     <div  className="flex bg-blue-300 justify-center text-xl py-4 font-semibold">
-      <h1>Clone Candy Crush Game</h1>
-    </div>
-    
     <div className="flex flex-col  lg:flex-row items-center w-full mx-auto gap-4 justify-center h-screen bg-blue-300 ">
-   
       <div className=" lg:flex gap-4 flex-col hidden  w-96 h-[82vh]">
       <div className="bg-purple-400 w-96 h-[40vh]">
         <img
